@@ -1,0 +1,314 @@
+@charset "UTF-8";
+
+/* Font Inportadas do Google */
+
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Fonte-face */
+@font-face{
+    font-family: ANDROID;
+    src: url(../fontes/idroid.otf) format("opentype");
+}
+
+/*Estilo global aqui*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* VARIAVES */
+:root {
+    --CorCabeca: #222E5C;
+    --CorCorpo: #3F54A8;
+    --CorTitulos: #516DDB;
+    --CorFundoTitulos: #8CA1F5;
+    --corExtra: #55575E;
+}
+
+/* Estilo corpo principal */
+body {
+    background-color: var(--CorCorpo);
+}
+
+/* Estilo da cabeça do corpo1 */
+body
+#contener1 {
+    padding: 20px 0 0 0;
+    background-image: linear-gradient(-180deg, var(--CorTitulos)67px, var(--CorCabeca)220px);
+}
+
+/* Estilo da cabeça do corpo2 */
+body
+#contener1
+#secaoCabeca1{
+    margin: 0 0 52px 0;
+    text-align: center;
+    color: rgb(255,255,255);
+}
+
+/* Estilo titulo prinipal */
+body
+#contener1
+h1 {
+    margin: 0 0 10px 0;
+    font-size: 3em;
+    max-width: 100%;
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: 1.5px 1.5px #000, -1.5px -1.5px #000, 0.5px 0.5px #000;
+}
+
+/* Estilo do paragrafo da cabeça */
+body
+#contener1
+p {
+    width: 559px;
+    margin: auto;
+    font-size: 20px;
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Estilo da lista de navegação */
+#navegacao {
+    box-shadow: 0px 15px 13px -11px rgb(24, 23, 23);
+}
+
+#contener1
+#navegacao
+#lista1 {
+    width: 100%;
+    list-style: none;
+}
+
+/* Estilos dos li´s da lista de navegação */
+#contener1
+#navegacao
+#lista1
+.lis {
+    display: inline-block;
+    margin-left: 3px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contener1
+#navegacao
+.lis>
+a {
+    padding: 10px;
+    transition: 0.9s;
+    text-decoration: none;
+    border-radius: 5px 5px 0 0;
+    color: rgb(255,255,255);
+}
+
+#contener1
+#navegacao
+.lis>
+a:hover {
+    background-color: #516DDB;
+    text-decoration: underline;
+}
+
+/* Estilo no corpo main */
+body
+#contenerprincipal {
+    padding: 5px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    border-radius: 0 0 15px 15px;
+    border-left: solid 5px #3f54a8;
+    border-right: solid 5px #3f54a8;
+    box-shadow: 4px 47px 40px -36px rgba(32, 32, 32, 0.589);
+    background-color: rgb(255,255,255);
+}
+
+/* Estilo do h1 do corpa principal */
+main
+#secao01
+#titulosPri2 {
+    color: var(--CorCorpo);
+    margin: 10px 0 0 15px;
+    font-family: ANDROID, sans-serif;
+}
+
+/* Estilo de todos h2 corpo pricipais */
+
+main
+#secao01
+.titulos2 {
+    font-size: 21px;
+    margin:0 0 0 10px;
+    padding-left: 5px;
+    border-radius: 12px;
+    color: var(--CorCabeca);
+    font-family: ANDROID,sans-serif;
+    background-image: linear-gradient(to right, var(--CorFundoTitulos), transparent 137%);
+}
+
+
+/* Estilo de todos os paragrafos do corpo */
+main
+#secao01
+.paragrafos {
+    line-height: 30px;
+    text-indent: 20px;
+    text-align: justify;
+    margin: 15px 10px 15px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos da image dan-droids */
+main
+section
+#picture01 >
+img {
+    display: block;
+    text-align: center;
+    margin: auto;
+    max-width: 100%;
+}
+
+/* Estilos da image irana */
+main
+section
+#picture02 >
+img {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+}
+
+/* Estilos da image android */
+main
+section
+#picture03
+img {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+}
+
+/* Estilos do video inportado */
+main
+#video {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    padding-bottom: 50%;
+    margin: 10px 0 10px 0;
+    background-color: var(--corExtra);
+}
+
+main
+section >
+iframe {
+    position: absolute;
+    max-width: 100%;
+    left: 0;
+    top: 0;
+    height: 93%;
+    width: 82%;
+    transform: translate(11%, 4%);
+}
+
+/* Estilos do conteudo Extras do corpo*/
+main
+#extras {
+    color:#07228f;
+    border-radius: 10px; 
+    padding: 2px 10px 10px 10px;
+    background-color: #55575ed2;
+}
+
+/* Estilos do titulos Extras do corpo principal */
+main
+#extras
+#titulos3{
+    color: rgb(255,255,255);
+    padding: 11px 0 9px 11px;
+    background-color: #3F54A8;
+    border-radius: 10px 10px 0 0;
+    margin: -2px -10px 0px -10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Estilos do paragrafos Extras do corpo principal*/
+main
+#extras
+.paragrafos {
+    line-height: 30px;
+    text-indent: 20px;
+    margin: 15px 0 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main
+#extras2
+#paragrafoExt {
+    line-height: 30px;
+    text-indent: 20px;
+    margin: 10px 0 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo de lista do corpo2 */
+main
+#extras
+ul {
+    columns: 2;
+    list-style: inside;
+    list-style-type: '\1F5F8\00A0\00A0';
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo de links especiais */
+main
+.linksEspecial {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--CorFundoTitulos);
+}
+
+/* Estio de evento ao passar em cima do links especiais */
+main
+.linksEspecial:hover {
+    padding: 2px;
+    border-radius: 10px;
+    text-decoration: underline;
+    background-color: var(--CorCabeca);
+}
+
+/* Estilo do roda-pe */
+body
+footer {
+    text-align: center;
+    background-color: var(--CorFundoTitulos);
+}
+
+/* Estilos do paragrafo do roda-pe */
+footer
+p {
+    font-size: 2em;
+    text-shadow: -1px -1px #fff, 1px 1px #fff, 0 0 #fff;
+    font-family: 'Fasthand', cursive;
+}
+
+/* estilo do link do roda-pe */
+footer
+p
+a {
+    text-decoration: none;
+}
+
+/* Evento ao passar em cima do link */
+footer
+p
+a:hover {
+    text-decoration: underline;
+}
